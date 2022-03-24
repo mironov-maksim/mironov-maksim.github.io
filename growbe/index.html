@@ -24,16 +24,20 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Home</a>
+                <a class="menu__link menu__link--js" href="#promo">Home</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">About Us</a>
+                <a class="menu__link menu__link--js" href="#">About Us</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Services</a>
+                <a class="menu__link menu__link--js" href="#services"
+                  >Services</a
+                >
               </li>
               <li class="menu__item has-subnav">
-                <a class="menu__link" href="#">Features</a>
+                <a class="menu__link menu__link--offdefault" href="#"
+                  >Features</a
+                >
                 <ul class="subnav">
                   <li class="subnav__item">
                     <a href="" class="subnav__link">Portfolio</a>
@@ -47,13 +51,15 @@
                 </ul>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#team">Team</a>
+                <a class="menu__link menu__link--js" href="#team">Team</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Blog</a>
+                <a class="menu__link menu__link--js" href="#testimonials"
+                  >Blog</a
+                >
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Contact</a>
+                <a class="menu__link menu__link--js" href="#footer">Contact</a>
               </li>
             </ul>
             <a class="btn btn--little" href="#">Get Started</a>
@@ -62,7 +68,7 @@
       </div>
     </header>
     <main>
-      <section class="promo">
+      <section class="promo" id="promo">
         <div class="container">
           <div class="promo__wrapper">
             <h1 class="promo__title">
@@ -82,7 +88,10 @@
               <span class="btn-video__text">Watch Video</span>
             </a>
           </div>
-          <img class="promo__img" src="img/promo/promo_img-big.svg" alt="#" />
+          <picture width="945" height="auto" class="promo__img">
+            <source srcset="img/promo/promo-bg.webp" type="image/webp" />
+            <img src="img/promo/promo-bg.png" alt="#" />
+          </picture>
         </div>
       </section>
       <div class="partners">
@@ -133,14 +142,14 @@
               <a class="btn" href="#">Learn More</a>
             </div>
             <img
-              src="img/solution/macbook.png"
+              src="img/solution/macbook.webp"
               alt="macbook"
               class="solution__img"
             />
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" id="c">
         <div class="container">
           <div class="features__items">
             <div class="features__item">
@@ -209,7 +218,7 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <div class="services__title-wrapper">
             <h2 class="title">Why You Should Choose Us.</h2>
@@ -225,7 +234,7 @@
               data-wow-delay="0.6s"
             >
               <img
-                src="img/services/keyword.png"
+                src="img/services/keyword.webp"
                 alt="keyword"
                 class="services__item-img"
               />
@@ -243,7 +252,7 @@
               data-wow-delay="0.6s"
             >
               <img
-                src="img/services/seo.png"
+                src="img/services/seo.webp"
                 alt="seo"
                 class="services__item-img"
               />
@@ -261,7 +270,7 @@
               data-wow-delay="0.6s"
             >
               <img
-                src="img/services/social.png"
+                src="img/services/social.webp"
                 alt="social"
                 class="services__item-img"
               />
@@ -279,7 +288,20 @@
       </section>
       <section class="seo">
         <div class="container">
-          <img class="seo__img" src="img/doing/image.png" alt="#" />
+          <!-- <img class="seo__img" src="img/seo/image.webp" alt="#" /> -->
+          <picture class="seo__img">
+            <source
+              media="(min-width: 800px)"
+              srcset="img/seo/image_desk.png"
+              type="image/png"
+            />
+            <source
+              media="(max-width: 800px)"
+              srcset="img/seo/image.png"
+              type="image/png"
+            />
+            <img src="img/seo/image_desk.png" alt="заглушка" />
+          </picture>
           <div class="content__wrapper">
             <div class="seo__content">
               <h2 class="title">
@@ -401,7 +423,7 @@
               </form>
             </div>
           </div>
-          <img class="speed__img" src="img/speed/speed_img.png" alt="#" />
+          <img class="speed__img" src="img/speed/speed_img.webp" alt="#" />
         </div>
       </section>
       <section class="plans">
@@ -570,7 +592,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="testimonials__title-wrapper">
           <h2 class="title">Our Clients Say</h2>
           <p class="description">
@@ -644,8 +666,8 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </section> -->
-      <!-- <section class="news">
+      </section>
+      <section class="news">
         <div class="news__title-wrapper">
           <h2 class="title">Our Latest News</h2>
           <p class="description">
@@ -658,7 +680,7 @@
           <div class="swiper-wrapper">
             <div class="news__item swiper-slide">
               <img
-                src="img/news/image_1.png"
+                src="img/news/image_1.webp"
                 alt="image_1"
                 class="news__item-img"
               />
@@ -681,7 +703,7 @@
             </div>
             <div class="news__item swiper-slide">
               <img
-                src="img/news/image_1.png"
+                src="img/news/image_1.webp"
                 alt="image_1"
                 class="news__item-img"
               />
@@ -704,7 +726,7 @@
             </div>
             <div class="news__item swiper-slide">
               <img
-                src="img/news/image_1.png"
+                src="img/news/image_1.webp"
                 alt="image_1"
                 class="news__item-img"
               />
@@ -727,7 +749,7 @@
             </div>
             <div class="news__item swiper-slide">
               <img
-                src="img/news/image_1.png"
+                src="img/news/image_1.webp"
                 alt="image_1"
                 class="news__item-img"
               />
@@ -751,9 +773,9 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__items">
           <div class="footer__item">
@@ -830,6 +852,7 @@
         <video controls src="video/Nature - 105936.mp4"></video>
       </div>
     </div>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
