@@ -1,0 +1,48 @@
+.team {
+  padding: 86px 0 100px;
+}
+
+.team__title-wrapper {
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  width: 270px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  padding: 50px 15px;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    .team__item-name {
+      color: #f25822;
+    }
+  }
+}
+
+.team__item-name {
+  font-family: "Gilroy-SemiBold";
+  font-size: 20px;
+  color: #000000;
+}
+
+.team__item-position {
+  font-family: "Gilroy-Medium";
+  font-size: 13px;
+  color: #888888;
+}
+
+.team__item-img {
+  display: inline-block;
+  margin-bottom: 15px;
+}

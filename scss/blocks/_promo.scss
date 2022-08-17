@@ -1,0 +1,68 @@
+.promo {
+  padding: 115px 0 103px;
+  overflow: hidden;
+}
+
+.promo__wrapper {
+  max-width: 543px;
+  position: relative;
+  &::before {
+    content: "";
+    width: 770px;
+    height: 374px;
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    background: url(../../img/promo/element.svg);
+  }
+}
+
+.promo__title {
+  font-family: Gilroy-Bold;
+  font-size: 60px;
+  span {
+    position: relative;
+    &::after {
+      content: "";
+      width: 314px;
+      height: 76px;
+      background: url(../../img/promo/Ellipse.svg);
+      position: absolute;
+      top: 3px;
+      left: -20px;
+      z-index: -1;
+    }
+  }
+}
+
+.promo__descr {
+  font-family: Gilroy-Medium;
+  font-size: 20px;
+  color: #888888;
+  margin: 17px 0 37px;
+}
+
+.btn-video {
+  margin-left: 27px;
+  transition: 0.3s;
+}
+
+.btn-video__text {
+  margin-left: 10px;
+  color: #aaaaaa;
+  font-family: Gilroy-Bold;
+  font-size: 15px;
+}
+
+.promo__img {
+  position: absolute;
+  right: -275px;
+  width: 70%;
+  top: 50%;
+  z-index: -1;
+  transform: translateY(-50%);
+}
+
+.rectangle {
+  position: absolute;
+}

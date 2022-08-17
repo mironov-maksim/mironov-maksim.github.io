@@ -1,0 +1,139 @@
+@import "base/vars";
+@import "base/fonts";
+@import "base/bootstrap-reboot";
+@import "base/icons";
+@import "libs/swiper";
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/partners";
+@import "blocks/solution";
+@import "blocks/features";
+@import "blocks/services";
+@import "blocks/seo";
+@import "blocks/funfuct";
+@import "blocks/speed";
+@import "blocks/footer";
+@import "blocks/plans";
+@import "blocks/testimonials";
+@import "blocks/team";
+@import "blocks/news";
+@import "blocks/animation";
+@import "blocks/car";
+@import "blocks/modals";
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #f25822;
+  font-family: "Gilroy-Bold";
+  font-size: 13px;
+  padding: 16px 41px;
+  text-decoration: none;
+  border-radius: 50px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.btn--big {
+  color: #f3602d;
+  background-color: rgba(242, 88, 34, 0.25);
+  padding: 17px 64px;
+}
+
+.btn--little {
+  padding: 10px 25px;
+  font-family: "Gilroy-SemiBold";
+  font-size: 12px;
+}
+.btn--arrow {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(../icons/btn_arrow.svg) center center/contain no-repeat;
+    width: 16px;
+    height: 10px;
+    top: 41%;
+    right: 23px;
+  }
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.title {
+  font-family: Gilroy-Bold;
+  font-size: 45px;
+}
+
+.description {
+  color: #666666;
+  margin: 20px 0;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background-color: #dddddd;
+  margin: 0 4px;
+  &-active {
+    background: #f25822;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  margin-top: 23px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 17px;
+  a {
+    display: flex;
+    width: 20px;
+    font-size: 11px;
+    height: 20px;
+    border-radius: 100%;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    color: #aaaaaa;
+    &:hover {
+      background: #f25822;
+      color: #ffffff;
+    }
+  }
+}
+
+.socials--big {
+  justify-content: start;
+  margin-top: 30px;
+  a {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+}
+
+@import "media/media";

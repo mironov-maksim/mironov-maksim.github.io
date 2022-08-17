@@ -1,0 +1,58 @@
+.testimonials {
+  padding: 93px 0 70px;
+}
+
+.testimonials__title-wrapper {
+  text-align: center;
+}
+
+.testimonials__item {
+  border: 2px solid #eeeeee;
+  padding: 25px 20px 27px;
+  transition: 0.5s;
+  /*  &:hover {
+    box-shadow: 15px 25px 60px -10px rgba(0, 0, 0, 0.1);
+    border: none;
+  } */
+}
+
+.testimonials__item-descr {
+  font-family: "Gilroy-Medium";
+  font-size: 16px;
+  color: #888888;
+}
+
+.testimonials__item-name {
+  font-family: "Gilroy-SemiBold";
+  font-size: 13px;
+}
+
+.testimonials__item-position {
+  font-family: "Gilroy-Medium";
+  font-size: 13px;
+  color: #888888;
+}
+
+.testimonials__item-img {
+  margin: 29px 0 10px;
+}
+
+.testimonials__slider {
+  margin-top: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  .swiper-slide {
+    opacity: 30%;
+  }
+
+  .swiper-slide-prev {
+    box-shadow: 15px 25px 60px -10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff;
+    opacity: 100%;
+  }
+
+  .swiper-slide-active {
+    opacity: 100%;
+  }
+}

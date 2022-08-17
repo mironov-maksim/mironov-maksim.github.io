@@ -1,0 +1,42 @@
+.modal-overlay {
+  background: rgba($color: #000000, $alpha: 0);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 0.6s;
+  z-index: -10;
+  &--active {
+    background: rgba($color: #000000, $alpha: 0.6);
+    z-index: 100;
+  }
+}
+
+.modal-video {
+  max-width: 500px;
+  width: 100%;
+  top: 50%;
+  left: -100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: #fff;
+  transition: 1s;
+
+  &--active {
+    left: 50%;
+  }
+  video {
+    width: 100%;
+    margin-bottom: -8px;
+  }
+}
+
+.modal-close {
+  font-size: 40px;
+  position: absolute;
+  color: #fff;
+  right: -28px;
+  top: -20px;
+  cursor: pointer;
+}

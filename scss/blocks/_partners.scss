@@ -1,0 +1,17 @@
+.partners {
+  padding: 100px 0;
+}
+
+.partners__items {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* .partners__items-img {
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+} */
