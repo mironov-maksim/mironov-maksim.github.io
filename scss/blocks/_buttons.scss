@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  height: 48px;
+  padding: 12px 28px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--white);
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease-in;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.btn-wrap {
+  display: flex;
+  gap: 30px;
+}
+
+.btn-outline {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 48px;
+  border-radius: 5px;
+  padding: 12px 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+
+  border: 1px solid var(--blackpure);
+  color: var(--blackpure);
+  &:hover {
+    opacity: 0.8;
+  }
+  :active {
+    position: relative;
+    top: 1px;
+  }
+}
